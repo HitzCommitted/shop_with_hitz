@@ -9,11 +9,20 @@
             <div class="collapse navbar-collapse" id="navbarTop4">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link"> English </a>
-
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Language </a>
+                        <ul class="dropdown-menu small">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Arabic</a></li>
+                            <li><a class="dropdown-item" href="#">Russian </a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link"> USD </a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> USD </a>
+                        <ul class="dropdown-menu small">
+                            <li><a class="dropdown-item" href="#">KES</a></li>
+                            <li><a class="dropdown-item" href="#">TZS</a></li>
+                            <li><a class="dropdown-item" href="#">UGX</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -45,7 +54,7 @@
                         </div>
                     </div> <!-- category-wrap.// -->
                 </div> <!-- col.// -->
-                <a href="./store.html" class="btn btn-outline-primary">Store</a>
+                <a href="{% url 'store' %}" class="btn btn-outline-primary">Store</a>
                 <div class="col-lg  col-md-6 col-sm-12 col">
                     <form action="#" class="search">
                         <div class="input-group w-100">
