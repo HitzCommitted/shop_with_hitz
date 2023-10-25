@@ -124,7 +124,6 @@
 
                     </div>
                 </header><!-- sect-heading -->
-
                 <div class="row">
                     {% for product in products %}
                     <div class="col-md-4">
@@ -142,7 +141,8 @@
                                         <!-- <del class="price-old">${{ product.price }}</del> -->
                                     </div> <!-- price-wrap.// -->
                                 </div>
-                                <a href="#" class="btn btn-block btn-primary">Add to Cart</a>
+                                <a href="{% url 'add_cart' product.id %}" class="btn btn-block btn-primary">Add to
+                                    Cart</a>
                             </figcaption>
                         </figure>
                     </div> <!-- col.// -->
